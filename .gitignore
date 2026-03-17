@@ -1,0 +1,3 @@
+.coveragerc
+.venv/
+__pycache__/
