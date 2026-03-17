@@ -77,7 +77,7 @@ jobs:
           push: true
           tags: |
             adrianchen8662/is-601-module-8-first-fasapi-web-application:latest
-            adrianchen8662/is-601-module-8-first-fasapi-web-application:latest:${{ github.sha }}
+            adrianchen8662/is-601-module-8-first-fasapi-web-application:${{ github.sha }}
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=adrianchen8662/is-601-module-8-first-fasapi-web-application:latest:cache
+          cache-from: type=registry,ref=adrianchen8662/is-601-module-8-first-fasapi-web-application:cache
           cache-to: type=inline,mode=max
