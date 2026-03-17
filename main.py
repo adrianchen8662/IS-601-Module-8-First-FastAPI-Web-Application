@@ -56,6 +56,13 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         content={"error": error_messages},
     )
 
+@app.get("/health")
+async def health_check():
+    """
+    Health check endpoint for container orchestration.
+    """
+    return {"status": "ok"}
+
 @app.get("/")
 async def read_root(request: Request):
     """
